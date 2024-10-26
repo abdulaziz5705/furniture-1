@@ -3,7 +3,6 @@ from django.db import models
 from common.models import BaseModel
 from django.utils.translation import gettext_lazy as _
 
-
 class CategoryModel(BaseModel):
     name = models.CharField(max_length=255, verbose_name=_("Category Name"), unique=True)
 
